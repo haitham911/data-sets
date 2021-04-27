@@ -17,3 +17,6 @@
 - https://k8-mass-download.s3.eu-west-2.amazonaws.com/gov_Files.zip
    - Number of files: 9,824
    - Total size: 6.87GB
+- s3://k8-test-data/gov_uk
+   - Number of files: 11k
+   - Total size: 11.9GB
