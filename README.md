@@ -20,3 +20,9 @@
 - s3://k8-test-data/gov_uk
    - Number of files: 11k
    - Total size: 11.9GB
+- CDR-Plugin-test-files: s3://cdr-plugin-test-files
+   - Folder **100** :         100  files, 60MB,  different files types
+   - Folder **500** :         500  files, 375MB, subset of gov-uk
+   - Folder **1000**:         1000 files, 604MB, subset of gov-uk
+   - Folder **2000**:         2000 files, 1GB,   subset of gov-uk
+   - Folder **all-clean-73**: 73   files, 40MB,  folder 100 that contains just clean files
