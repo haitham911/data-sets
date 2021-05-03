@@ -26,3 +26,6 @@
    - Folder **1000**:         1000 files, 604MB, subset of gov-uk
    - Folder **2000**:         2000 files, 1GB,   subset of gov-uk
    - Folder **all-clean-73**: 73   files, 40MB,  folder 100 that contains just clean files
+   - gov-docs-ok-554.zip
+   - Folder **hard-to-process**: 3 files, -, files that GW SDK has trouble processing, worth of investigating 
+- https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/
