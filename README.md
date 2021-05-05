@@ -30,4 +30,4 @@
    - Folder **hard-to-process**: 3 files, -, files that GW SDK has trouble processing, worth of investigating 
 - https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/
    - You can download one zip at the time or use wget (ex. `wget https://digitalcorpora.s3.amazonaws.com/corpora/files/govdocs1/zipfiles/000.zip`)
-   - To download all files 90GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
+   - To download all 90GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
