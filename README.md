@@ -26,8 +26,11 @@
    - Folder **1000**:         1000 files, 604MB, subset of gov-uk
    - Folder **2000**:         2000 files, 1GB,   subset of gov-uk
    - Folder **all-clean-73**: 73   files, 40MB,  folder 100 that contains just clean files
-   - gov-docs-ok-554.zip
    - Folder **hard-to-process**: 3 files, -, files that GW SDK has trouble processing, worth of investigating 
+   - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-docs-ok-554.zip
+   - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-docs-ok-2492.zip
+   - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-uk-ok-9124.zip
+   - s3://cdr-plugin-test-files/35_OK.zip, all clean files, 34.2GB taken from the link below
 - https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/
    - You can download one zip at the time on your local or use wget within remote CDR VM (ex. `wget https://digitalcorpora.s3.amazonaws.com/corpora/files/govdocs1/zipfiles/000.zip`)
    - To download all ~350GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
