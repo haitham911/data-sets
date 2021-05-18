@@ -34,3 +34,28 @@
 - https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/
    - You can download one zip at the time on your local or use wget within remote CDR VM (ex. `wget https://digitalcorpora.s3.amazonaws.com/corpora/files/govdocs1/zipfiles/000.zip`)
    - To download all ~350GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
+- Websites that can be scrarped: 
+   - http://www.bitsavers.org/bits/
+   - https://wikileaks.org/sony/docs/01
+
+
+# How to scarpe website
+- Use `WGET` for [scarping](https://apple.stackexchange.com/questions/100570/getting-all-files-from-a-web-page-using-curl)
+- Run one of below commands to scarp website. First will scarp whole website, second one just files that have pdf, jpg and png:
+  ```
+  sudo wget -r -np -nd -k <WEBSITE URL>
+  sudo wget -r -np -nd -k  -e robots=off -A pdf,jpg,png <WEBSITE URL>
+  ```
+  
+- Before downloading the website you can first spider the website then find links associated with the files you want to test and then download them
+  ```
+  sudo -w 1 --random-wait --no-check-certificate -e robots=off -o output.log --spider -r <WEBSITE URL>
+  grep -oP "http\S+\.(pdf|doc|docx|docm|xls|xlsx|xlsm|ppt|pptx|jpg|gif|png)" 1.log | sort | uniq > links.txt
+  wget -i links.txt --no-check-certificate -e robots=off
+  ```
+
+- After downloading the files you can check if additional cleaning is needed (removing the files that are not supported or files without extensions and similar)
+- Websites that can be scrarped: 
+   - http://www.bitsavers.org/bits/
+   - https://wikileaks.org/sony/docs/01
+   - or any other you would like
