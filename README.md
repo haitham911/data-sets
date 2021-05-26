@@ -47,10 +47,13 @@
   sudo wget -r -np -nd -k <WEBSITE URL>
   sudo wget -r -np -nd -k  -e robots=off -A pdf,jpg,png <WEBSITE URL>
   ```
+
+- In case of lots of 503 errors add `-U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36"` to above commands
+- If you want to run `wget` in background add `-b`
   
 - Before downloading the website you can first spider the website then find links associated with the files you want to test and then download them
   ```
-  sudo -w 1 --random-wait --no-check-certificate -e robots=off -o output.log --spider -r <WEBSITE URL>
+  sudo wget 1 --random-wait --no-check-certificate -e robots=off -o output.log --spider -r <WEBSITE URL>
   grep -oP "http\S+\.(pdf|doc|docx|docm|xls|xlsx|xlsm|ppt|pptx|jpg|gif|png)" 1.log | sort | uniq > links.txt
   wget -i links.txt --no-check-certificate -e robots=off
   ```
