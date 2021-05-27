@@ -63,3 +63,11 @@
    - http://www.bitsavers.org/bits/
    - https://wikileaks.org/sony/docs/01
    - or any other you would like
+
+# How to track high risk files to the url we downloaded them from
+- Download files from specific website
+- Run file processing via [CDR Platform](https://filetrust.github.io/cdr-plugin-folder-to-folder/)
+- Check Threat Dashboard after the run and filter the results with threat level being set to high
+- Download csv with the list of files
+- Type the exact name in Browser and that should lead you back to the beggining 
+- Example of govUK list of files with high threat level: [discover-file-analysis.txt](https://github.com/k8-proxy/data-sets/files/6552642/discover-file-analysis.txt)
