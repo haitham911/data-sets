@@ -20,6 +20,9 @@
 - s3://k8-test-data/gov_uk
    - Number of files: 11k
    - Total size: 11.9GB
+- https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/
+   - You can download one zip at the time on your local or use wget within remote CDR VM (ex. `wget https://digitalcorpora.s3.amazonaws.com/corpora/files/govdocs1/zipfiles/000.zip`)
+   - To download all ~350GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
 - CDR-Plugin-test-files: s3://cdr-plugin-test-files
    - Folder **100** :         100  files, 60MB,  different files types
    - Folder **500** :         500  files, 375MB, subset of gov-uk
@@ -33,12 +36,15 @@
    - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-uk-ok-9124.zip
    - **35_OK.zip**, all clean files, 34.2GB taken from the https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/, s3://cdr-plugin-test-files/35_OK.zip
    - Scarped websites: 
-      - **bitsavers.zip**, 1267 files from http://www.bitsavers.org/bits/, s3://cdr-plugin-test-files/bitsavers.zip.zip
-      - **wikileaks.zip**, 4009 files from https://wikileaks.org/sony/docs/01, s3://cdr-plugin-test-files/wikileaks.zip
+   
+| Source | S3 URL | Total files | Total size |
+| --- | --- | --- | --- |
+| [bitsavers](http://www.bitsavers.org/bits/)| s3://cdr-plugin-test-files/bitsavers.zip | 1267 | 835MB |
+| [wikileaks](https://wikileaks.org/sony/docs/01) | s3://cdr-plugin-test-files/wikileaks.zip | 4009 | 1.1GB |
+| [gwsolutions](https://glasswallsolutions.com/) | s3://cdr-plugin-test-files/gwsolutions.zip | 490 | 56MB |
+| [fticonsulting](https://www.fticonsulting.com/) | s3://cdr-plugin-test-files/fticonsulting.zip | 2823 | 1.3GB |
+| [digitalcorpora](https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/) | s3://cdr-plugin-test-files/35GB_OK.zip | - | 35GB |
 
-- https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/
-   - You can download one zip at the time on your local or use wget within remote CDR VM (ex. `wget https://digitalcorpora.s3.amazonaws.com/corpora/files/govdocs1/zipfiles/000.zip`)
-   - To download all ~350GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
 
 
 # How to scarpe website
