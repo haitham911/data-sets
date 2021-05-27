@@ -31,13 +31,14 @@
    - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-docs-ok-554.zip
    - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-docs-ok-2492.zip
    - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-uk-ok-9124.zip
-   - s3://cdr-plugin-test-files/35_OK.zip, all clean files, 34.2GB taken from the link below
+   - **35_OK.zip**, all clean files, 34.2GB taken from the https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/, s3://cdr-plugin-test-files/35_OK.zip
+   - Scarped websites: 
+      - **bitsavers.zip**, 1267 files from http://www.bitsavers.org/bits/, s3://cdr-plugin-test-files/bitsavers.zip.zip
+      - **wikileaks.zip**, 4009 files from https://wikileaks.org/sony/docs/01, s3://cdr-plugin-test-files/wikileaks.zip
+
 - https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/
    - You can download one zip at the time on your local or use wget within remote CDR VM (ex. `wget https://digitalcorpora.s3.amazonaws.com/corpora/files/govdocs1/zipfiles/000.zip`)
    - To download all ~350GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
-- Websites that can be scrarped: 
-   - http://www.bitsavers.org/bits/
-   - https://wikileaks.org/sony/docs/01
 
 
 # How to scarpe website
