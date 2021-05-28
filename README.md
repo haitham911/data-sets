@@ -39,11 +39,11 @@
    
 | Source | S3 URL | Total files | Total size |
 | --- | --- | --- | --- |
-| [bitsavers](http://www.bitsavers.org/bits/)| s3://cdr-plugin-test-files/bitsavers.zip | 1267 | 835MB |
-| [wikileaks](https://wikileaks.org/sony/docs/01) | s3://cdr-plugin-test-files/wikileaks.zip | 4009 | 1.1GB |
-| [gwsolutions](https://glasswallsolutions.com/) | s3://cdr-plugin-test-files/gwsolutions.zip | 490 | 56MB |
-| [fticonsulting](https://www.fticonsulting.com/) | s3://cdr-plugin-test-files/fticonsulting.zip | 2823 | 1.3GB |
-| [digitalcorpora](https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/) | s3://cdr-plugin-test-files/35GB_OK.zip | - | 35GB |
+| [bitsavers](http://www.bitsavers.org/bits/)| [url to download zip](https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/bitsavers.zip) | 1267 | 835MB |
+| [wikileaks](https://wikileaks.org/sony/docs/01) | [url to download zip](https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/wikileaks.zip) | 4009 | 1.1GB |
+| [gwsolutions](https://glasswallsolutions.com/) | [url to download zip](https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gwsolutions.zip) | 490 | 56MB |
+| [fticonsulting](https://www.fticonsulting.com/) | [url to download zip](https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/fticonsulting.zip) | 2823 | 1.3GB |
+| [digitalcorpora](https://downloads.digitalcorpora.org/corpora/files/govdocs1/zipfiles/) | [url to download zip](https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/35GB_OK.zip) | - | 35GB |
 
 
 
