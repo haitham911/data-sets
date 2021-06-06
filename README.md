@@ -31,6 +31,7 @@
    - Folder **all-clean-73**: 73   files, 40MB,  folder 100 that contains just clean files
    - Folder **hard-to-process**: 3 files, -, files that GW SDK has trouble processing, worth of investigating 
    - Folder **high_threat_govUk**: 88 files, -, govUK files marked as high threat ones after processing
+   - **Failed files from govUk dataset**: s3://cdr-plugin-test-files/govUk_failed.zip
    - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-docs-ok-554.zip
    - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-docs-ok-2492.zip
    - https://cdr-plugin-test-files.s3-eu-west-1.amazonaws.com/gov-uk-ok-9124.zip
