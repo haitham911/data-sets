@@ -29,7 +29,7 @@
    - Folder **hard-to-process**: 3 files, -, files that GW SDK has trouble processing, worth of investigating 
    - Folder **high_threat_govUk**: 88 files, -, govUK files marked as high threat ones after processing
    - **Failed files from govUk dataset**: s3://cdr-plugin-test-files/govUk_failed.zip
-   - Folder **clean_files**: multiple zip files, all files withing this folder are clean (sucesfully rebuilt) 
+   - FFolder **clean_files**: multiple zip files, all files within this folder are clean (successfully rebuilt)
       - Folder **all-clean-73**: 73 files, 40MB, folder 100 that contains just clean files
       - **s3://cdr-plugin-test-files/clean_files/919_clean.zip**, folder 1000 that contains just clean files
       - **s3://cdr-plugin-test-files/clean_files/1907_clean.zip**, https://github.com/filetrust/test-files-generatorfolder 2000 that contains just clean files
