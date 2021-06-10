@@ -76,7 +76,7 @@
 
 # Script for generating random files
 - https://github.com/filetrust/test-files-generator
-- Files generated via above script are located in: s3://cdr-plugin-test-files/random_generated_pdfs/
+- Files generated via above script are located in: **s3://cdr-plugin-test-files/random_generated_pdfs/** folder
 
 # How to track high risk files to the url we downloaded them from
 - Download files from specific website
