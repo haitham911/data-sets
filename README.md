@@ -11,6 +11,9 @@
    - Number of files: 5 zip files with numerous malicious files inside
    - Total size: UNKNOWN
 
+# Files for content integrity check
+- https://github.com/k8-proxy/data-sets/blob/main/xlsx/0000274.xlsx
+    - 0000274.xlsx file uses the rand() function which changes some of the textual data but also there are graphs derived from it. Any type of comparison that actually opens the file should trigger the rand() functions and yield a difference.
 # Other datasets
 - https://k8-mass-download.s3.eu-west-2.amazonaws.com/gov_Files.zip
    - Number of files: 9,824
