@@ -25,10 +25,10 @@
    - You can download one zip at the time on your local or use wget within remote CDR VM (ex. `wget https://digitalcorpora.s3.amazonaws.com/corpora/files/govdocs1/zipfiles/000.zip`)
    - To download all ~350GB of files run `aws s3 cp s3://digitalcorpora/corpora/files/govdocs1/zipfiles/ . --recursive`
 - CDR-Plugin-test-files: s3://cdr-plugin-test-files
-   - Folder **100** :         100  files, 60MB,  different files types
-   - Folder **500** :         500  files, 375MB, subset of gov-uk
-   - Folder **1000**:         1000 files, 604MB, subset of gov-uk
-   - Folder **2000**:         2000 files, 1GB,   subset of gov-uk
+   - Folder **100** :         100  files, 60MB,  different files types, can be downloaded [here](https://cdr-plugin-test-files.s3.eu-west-1.amazonaws.com/100.zip)
+   - Folder **500** :         500  files, 375MB, subset of gov-uk, can be downloaded [here](https://cdr-plugin-test-files.s3.eu-west-1.amazonaws.com/500.zip)
+   - Folder **1000**:         1000 files, 604MB, subset of gov-uk, can be downloaded [here](https://cdr-plugin-test-files.s3.eu-west-1.amazonaws.com/scenario-1000.zip)
+   - Folder **2000**:         2000 files, 1GB,   subset of gov-uk, can be downloaded [here](https://cdr-plugin-test-files.s3.eu-west-1.amazonaws.com/scenario-2000.zip)
    - Folder **hard-to-process**: 3 files, -, files that GW SDK has trouble processing, worth of investigating 
    - Folder **high_threat_govUk**: 88 files, -, govUK files marked as high threat ones after processing
    - **Failed files from govUk dataset**: s3://cdr-plugin-test-files/govUk_failed.zip
